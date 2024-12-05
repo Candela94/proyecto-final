@@ -11,6 +11,7 @@
     --terciary: #2E2E2E;
     
     --txt-secondary: #545252;
+    font-size: 14px;
   
 
 }
@@ -59,6 +60,51 @@ a {
     src: url(../fonts/mattone-black.otf);
 }
 
+
+@font-face {
+    font-family: "mattone-regular";
+    src: url(../fonts/mattone-regular.otf);
+}
+
+
+
+
+
+/* ------------------------- */
+/*         Header            */
+/* ------------------------- */
+
+
+
+.Header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2em;
+    /* background-color: var(--secondary); */
+    color: var(--primary);
+    
+
+}
+
+
+/* Header versión dekstop */
+
+.Header-nav ul{
+    font-family: poppins;
+    display: none;
+    gap: 64px;
+}
+
+.Header-nav li{
+    list-style: none;
+   
+}
+
+.Header-icon{
+    font-size: 2rem;
+    color: var(--secondary);
+}
 
 
 
@@ -174,27 +220,7 @@ a {
 /* ----------------------------------*/
 
 
-.Main-themes {
-    display: flex;
-    justify-content: end;
-    gap: 24px;
-    padding: 32px;
-}
 
-.Main-colorButton {
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 10px;
-    transition: rotate 0.3s ease, transform 0.3s ease ;
-
-}
-
-.Main-colorButton:hover {
-    rotate: 180deg;
-    transform: scale(1.2);
-}
 
 /* ----------------------------------*/
 /*              Botones              */
@@ -216,4 +242,21 @@ a {
 
 #green-mode {
     background-color: #97A75B;
+}
+
+
+
+
+@media screen and (min-width: 650px)  {
+    
+    .Header-nav ul{
+        display: flex;
+    }
+
+    /* .Header-icon{
+        display: none;
+    } */
+
+
+
 }

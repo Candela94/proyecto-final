@@ -4,26 +4,29 @@
 .Body{
     font-family: poppins, khula;
     display: flex;
+    flex-direction: column;
+    background-color: var(--primary);
    
 }
+
+
+
+
+
 
 
 .Main{
 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    gap: 56px;
     width: 100%;
     height: 100vh;
-    padding: 1em;
+    padding: 1rem;
 }
 
 
-.Main-intro{
 
-    
-
-}
 
 
 .Main-h1{
@@ -31,14 +34,134 @@
     align-self: flex-end ;
     font-family: mattone-black;
     font-size: 48px;
-    /* rotate: -90deg; */
+    color: var(--secondary);
+    padding-top: 4rem;
+   
   
 
 }
 
-.Main-img{
 
-    width: 40px;
+
+
+.Main-introBtnEntrar{
+    font-family: mattone-regular;
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.Main-mode{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--secondary);
+    gap: 1rem;
+    padding-top: 4rem;
 
 }
 
+
+.Main-modeButton{
+
+    font-family: poppins;
+    border: solid 0.2px var(--secondary);
+    padding: 1.5rem;
+    border-radius: 100%;
+    background-color: var(--primary);
+    
+}
+
+
+.Footer{
+   
+    padding: 2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--secondary);
+}
+
+.Footer-nav ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.Footer-nav li{
+    list-style: none;
+    color: var(--primary);
+}
+
+.Footer-icons{
+    font-size: 2em;
+   
+}
+
+.FooterDekstop{
+    display: none;
+}
+
+
+
+
+
+
+/* ------------------------------------------ */
+/*     Media Query versión Tablet/Dekstop     */
+/* ------------------------------------------ */
+
+
+
+@media screen and (min-width: 650px) {
+
+.Main-intro{
+    display: flex;
+    justify-content: center;
+}
+
+.Main-h1{
+    font-size: 70px;
+}
+
+
+.Footer{
+    display: none;
+}
+
+.FooterDekstop{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 32px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+
+.FooterDekstop-nav{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.FooterDekstop-navDiv{
+
+    width: 250px;
+    height: 100px;
+    background-color: var(--secondary);
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:mattone-regular ;
+    border-radius: 10% 10% 0 0 ;
+    transition: height 0.6s ease;
+
+}
+
+}

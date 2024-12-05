@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,9 @@
     <meta name="author" content="Candela Fos Segarra">
     <title>Inicio</title>
 
-     <!-- iconos de google -->
-     <link rel="stylesheet"
-     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- iconos de google -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 
     <!-- font awesome -->
@@ -17,37 +18,103 @@
 
 
     <!-- CSS -->
-     <link rel="stylesheet" href="./css/styless.css">
-     <link rel="stylesheet" href="./css/layout-index-inicio.css">
+    <link rel="stylesheet" href="./css/styless.css">
+    <link rel="stylesheet" href="./css/layout-index-inicio.css">
+    <link rel="stylesheet" href="./css/variables.css">
 
 
 </head>
+
 <body class="Body u-lightMode">
+
+
+    <Header class="Header">
+        <img src="#" alt="Logo" class="Logo">
+    
+            <span class="Header-icon material-symbols-outlined">
+                menu
+            
+       
+
+        <nav class="Header-nav">
+            <ul class="Header-ul">
+                <li class="Header-li">Sobre mi</li>
+                <li class="Header-li">Proyectos</li>
+                <li class="Header-li">Contacto</li>
+            </ul>
+        </nav>
+    </Header>
 
 
     <main class="Main">
 
-        
-        
+
+        <!-- Título principañ -->
         <div class="Main-intro">
-            <h1 class="Main-h1">ABCDEFGHIJKLMN  abcdef</h1>
-            
+            <h1 class="Main-h1">Mi mundo UX/UI Front End</h1>
+            <p class="Main-p">Candela Fos</p>
+
         </div>
 
-        <!-- <div class="Main-themes">
-            <button class="Main-colorButton" id="light-mode"></button>
-            <button class="Main-colorButton" id="purple-mode"></button>
-            <button class="Main-colorButton" id="pink-mode"></button>
-            <button class="Main-colorButton" id="green-mode"></button>
-        </div> -->
+
+        <!-- Botón entrar -->
+        <button class="Main-introBtnEntrar">¡Entra!</button>
 
 
-        <footer class="Footer">
-            
 
-        </footer>
+
+        <!-- Botón cambiar modo -->
+
+        <div class="Main-mode">
+            <p class="Main-modeP">¡Hazme click y cambia de modo!</p>
+
+            <button class="Main-modeButton">Light
+            </button>
+
+
+        </div>
+
+        </div>
+
+
+
+
+
+
+
+
 
     </main>
+
+
+
+    <footer class="Footer">
+        <nav class="Footer-nav">
+            <ul class="Footer-ul">
+                <li class="Footer-li"><span class="Footer- icons material-symbols-outlined">
+                    stylus_note
+                    </span></li>
+                <li class="Footer-li"><span class=" Footer- icons material-symbols-outlined">
+                    stylus_note
+                    </span></li>
+                    <li class="Footer-li"><span class=" Footer- icons material-symbols-outlined">
+                        stylus_note
+                        </span></li>
+            </ul>
+        </nav>
+
     
+    </footer>
+
+    <Footer class="FooterDekstop">
+        <nav class="FooterDekstop-nav">
+        <div class="FooterDekstop-navDiv">Sobre mi</div>
+        <div class="FooterDekstop-navDiv">Proyectos</div>
+        <div class="FooterDekstop-navDiv">Contactos</div>
+        </nav>
+    </Footer>
+
+
 </body>
+
 </html>
