@@ -1,0 +1,219 @@
+
+/* ------------------------- */
+/*    Variables              */
+/* ------------------------- */
+
+:root {
+
+
+    --primary: #F6F6F0;
+    --secondary: #2E2E2E;
+    --terciary: #2E2E2E;
+    
+    --txt-secondary: #545252;
+  
+
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* ------------------------- */
+/*    Fuentes                */
+/* ------------------------- */
+
+
+@font-face {
+    font-family: "cartoon";
+    src: url(../fonts/cartoonCheck-black\ .ttf);
+}
+
+@font-face {
+    font-family: "aniko-medium";
+    src: url(../fonts/aniko-medium.otf);
+}
+
+
+
+
+@font-face {
+    font-family: "aniko-semibold";
+    src: url(../fonts/aniko-semibold.otf);
+}
+
+
+@font-face {
+    font-family: "aniko-bold";
+    src: url(../fonts/aniko-bold.otf);
+}
+
+
+@font-face {
+    font-family: "mattone-black";
+    src: url(../fonts/mattone-black.otf);
+}
+
+
+
+
+
+/* ------------------------- */
+/*    Clases reutilizables   */
+/* ------------------------- */
+
+
+.u-bgPrimary {
+    background-color: var(--bg-primary);
+
+}
+
+.u-bgSecondary {
+    background-color: var(--bg-secondary);
+
+}
+
+
+.u-title {
+    color: var(--title);
+
+}
+
+.u-txtPrimary {
+    color: var(--txt-primary);
+
+}
+
+.u-txtSecondary {
+    color: var(--txt-secondary);
+
+}
+
+
+
+
+
+
+
+
+/* ------------------------- */
+/*          Modos            */
+/* ------------------------- */
+
+
+
+
+
+
+
+/*          Light mode      */
+/* ------------------------- */
+
+.u-lightMode{
+
+    --primary: #F6F6F0;
+    --secondary: #2E2E2E;
+    --terciary: #2E2E2E;
+   
+
+
+}
+
+
+
+/*     Purple/Dark mode      */
+/* ------------------------- */
+
+
+.u-darkMode{
+
+--primary: #352D31;
+--secondary: #FEBAD0;
+--terciary: #F1EBDD;
+
+
+}
+
+
+
+/*         Pink mode         */
+/* ------------------------- */
+
+
+.u-pinkMode{
+    --primary: #FDA6DC;
+    --secondary: #FF4821;
+    --terciary: #F7F7F0;
+}
+
+
+
+/*       Green mode           */
+/* ------------------------- */
+
+.u-greenMode{
+
+    --primary: #97A75B;
+    --secondary: #FDA6DC;
+    --terciary: #FCD74D;
+}
+
+
+
+
+
+
+
+/* ----------------------------------*/
+/*       Botones-color               */
+/* ----------------------------------*/
+
+
+.Main-themes {
+    display: flex;
+    justify-content: end;
+    gap: 24px;
+    padding: 32px;
+}
+
+.Main-colorButton {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: rotate 0.3s ease, transform 0.3s ease ;
+
+}
+
+.Main-colorButton:hover {
+    rotate: 180deg;
+    transform: scale(1.2);
+}
+
+/* ----------------------------------*/
+/*              Botones              */
+/* ----------------------------------*/
+
+
+#light-mode {
+    background-color: #F6F6F0;
+}
+
+#purple-mode {
+    background-color: #352D31;
+}
+
+#pink-mode {
+    background-color: #FDA6DC;
+    
+}
+
+#green-mode {
+    background-color: #97A75B;
+}
