@@ -1,4 +1,12 @@
 
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
 /* ------------------------- */
 /*    Variables              */
 /* ------------------------- */
@@ -10,7 +18,7 @@
     --secondary: #2E2E2E;
     --terciary: #2E2E2E;
     
-    --txt-secondary: #545252;
+    --txt-button: #F6F6F0;
     font-size: 14px;
   
 
@@ -82,7 +90,7 @@ a {
     justify-content: space-between;
     padding: 2em;
     /* background-color: var(--secondary); */
-    color: var(--primary);
+    color: var(--terciary);
     
 
 }
@@ -165,6 +173,7 @@ a {
     --primary: #F6F6F0;
     --secondary: #2E2E2E;
     --terciary: #2E2E2E;
+    --txt-button: #F6F6F0;
    
 
 
@@ -181,6 +190,7 @@ a {
 --primary: #352D31;
 --secondary: #FEBAD0;
 --terciary: #F1EBDD;
+--txt-button: #F1EBDD;
 
 
 }
@@ -195,6 +205,7 @@ a {
     --primary: #FDA6DC;
     --secondary: #FF4821;
     --terciary: #F7F7F0;
+    --txt-button: #F7F7F0;
 }
 
 
@@ -206,7 +217,8 @@ a {
 
     --primary: #97A75B;
     --secondary: #FDA6DC;
-    --terciary: #FCD74D;
+    --terciary: #fbee37;
+    --txt-button: #F7F7F0;
 }
 
 

@@ -10,10 +10,147 @@
 }
 
 
+.Burbujas div{
+
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: var(--terciary);
+    position: fixed;
+    animation: animarBurbujas 4s linear infinite;
+    z-index: -1;
+}
+
+@keyframes animarBurbujas {
+    
+    50%{
+        transform: scale(1.6);
+    }
+}
 
 
 
+/* utilitie para cambiar el color de algunas burbujas, lo añadiremos a los divs que quiera modificar para tener variedad de colores en el fondo */
 
+.u-colorTerciaryBurbujas {
+    background-color: var(--terciary);
+}
+
+.Burbujas div:nth-child(1){
+    
+    top:  100px;
+    left: 90px;
+    width: 6px;
+    height: 6px;
+    animation-duration: 2s;
+
+}
+
+.Burbujas div:nth-child(2){
+    top: 130px;
+    right: 100px;
+    animation-duration: 4s;
+    width: 8px;
+    height: 8px;
+}
+ 
+.Burbujas div:nth-child(3){
+    bottom: 130px;
+   left: 30px;
+    width: 6px;
+    height: 6px;
+    animation-duration: 2s;
+}
+
+.Burbujas div:nth-child(4){
+ bottom: 330px;
+ left: 30px;
+ animation-duration: 4s;
+ width: 6px;
+ height: 6px;
+
+}
+
+
+.Burbujas div:nth-child(5){
+    top: 80px;
+    left: 45%;
+    animation-duration: 3.5s;
+}
+
+
+.Burbujas div:nth-child(6){
+
+    bottom: 300px;
+    left: 50%;
+    animation-duration: 2.5s;
+  
+}
+
+.Burbujas div:nth-child(7){
+    top: 260px;
+    right: 150px;
+    animation-duration: 3.5s;
+}
+
+
+.Burbujas div:nth-child(8){
+
+    top: 45%;
+    left: 50%;
+    animation-duration: 2.9s;
+}
+
+
+.Burbujas div:nth-child(9){
+    top: 190px;
+    right: 30px;
+    animation-duration: 4.3s;
+}
+
+
+.Burbujas div:nth-child(10){
+    bottom: 220px;
+    left: 60px;
+    width: 6px;
+    height: 6px;
+    animation-duration: 2.2s;
+}
+
+.Burbujas div:nth-child(11){
+    bottom: 330px;
+    right: 40px;
+    animation-duration: 4s;
+}
+
+.Burbujas div:nth-child(12){
+    bottom: 225px;
+    right: 60px;
+    width: 6px;
+    height: 6px;
+    animation-duration: 3s;
+}
+
+.Burbujas div:nth-child(13){
+    bottom: 130px;
+    right: 50px;
+    animation-duration: 2.5s;
+}
+
+.Burbujas div:nth-child(14){
+    bottom: 150px;
+    left:50%;
+    animation-duration: 2s;
+    
+    
+}
+
+
+.Burbujas div:nth-child(15){
+    top:340px;
+    right: 40px;
+    animation-duration: 4.3s;
+}
 
 .Main{
 
@@ -23,6 +160,7 @@
     width: 100%;
     height: 100vh;
     padding: 1rem;
+    position: relative;
 }
 
 
@@ -47,7 +185,7 @@
 .Main-introBtnEntrar{
     font-family: mattone-regular;
     background-color: var(--secondary);
-    color: var(--primary);
+    color: var(--terciary);
     padding: 1rem;
     border-radius: 8px;
 }
@@ -66,12 +204,25 @@
 .Main-modeButton{
 
     font-family: poppins;
-    border: solid 0.2px var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    border-radius: 50%;
+    /* border: solid 0.2px var(--secondary); */
     padding: 1.5rem;
-    border-radius: 100%;
     background-color: var(--primary);
+    color: var(--txt-button);
     
 }
+
+.Main-modeButton svg{
+    width: 16px;
+    color: var(--terciary);
+}
+
+
+
 
 
 .Footer{
@@ -86,12 +237,13 @@
 .Footer-nav ul{
     display: flex;
     justify-content: space-between;
+  
     
 }
 
 .Footer-nav li{
     list-style: none;
-    color: var(--primary);
+   
 }
 
 .Footer-icons{
@@ -116,14 +268,79 @@
 
 @media screen and (min-width: 650px) {
 
+
+.Header-icon{
+    display: none;
+}
+
+
+
 .Main-intro{
     display: flex;
     justify-content: center;
+    width: 90%;
 }
 
 .Main-h1{
-    font-size: 70px;
+    font-size: 80px;
 }
+
+
+.Main-introBtnEntrar{
+    display: none;
+}
+
+
+
+.Burbujas div:nth-child(3){
+    bottom: 130px;
+    left: 100px;
+    width: 6px;
+    height: 6px;
+    animation-duration: 2s;
+}
+
+
+
+
+.Burbujas div:nth-child(7){
+    top: 300px;
+    right: 200px;
+    animation-duration: 9s;
+}
+
+
+.Burbujas div:nth-child(8){
+
+    top: 60%;
+    right: 200px;
+    animation-duration: 2.9s;
+}
+
+
+.Burbujas div:nth-child(9){
+    top: 190px;
+    right: 50px;
+    animation-duration: 4s;
+}
+
+
+
+
+.Burbujas div:nth-child(11){
+    bottom: 250px;
+    right: 300px;
+    animation-duration: 4s;
+}
+
+
+.Burbujas div:nth-child(13){
+    bottom: 130px;
+    right: 0px;
+    animation-duration: 2.5s;
+}
+
+
 
 
 .Footer{
@@ -146,10 +363,11 @@
 .FooterDekstop-nav{
     display: flex;
     justify-content: space-between;
+    width: 100%;
 
 }
 
-.FooterDekstop-navDiv{
+.FooterDekstop-nav div{
 
     width: 250px;
     height: 100px;
@@ -159,7 +377,7 @@
     justify-content: center;
     align-items: center;
     font-family:mattone-regular ;
-    border-radius: 10% 10% 0 0 ;
+    border-radius: 20% 20% 0 0 ;
     transition: height 0.6s ease;
 
 }
