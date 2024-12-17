@@ -10,23 +10,8 @@
 }
 
 
-.Burbujas div{
 
-    width: 8px;
-    height: 8px;
-    border-radius: 100%;
-    background-color: var(--terciary);
-    position: fixed;
-    animation: animarBurbujas 4s linear infinite;
-    z-index: -1;
-}
 
-@keyframes animarBurbujas {
-    
-    50%{
-        transform: scale(1.6);
-    }
-}
 
 
 
@@ -36,121 +21,7 @@
     background-color: var(--terciary);
 }
 
-.Burbujas div:nth-child(1){
-    
-    top:  100px;
-    left: 90px;
-    width: 6px;
-    height: 6px;
-    animation-duration: 2s;
 
-}
-
-.Burbujas div:nth-child(2){
-    top: 130px;
-    right: 100px;
-    animation-duration: 4s;
-    width: 8px;
-    height: 8px;
-}
- 
-.Burbujas div:nth-child(3){
-    bottom: 130px;
-   left: 30px;
-    width: 6px;
-    height: 6px;
-    animation-duration: 2s;
-}
-
-.Burbujas div:nth-child(4){
- bottom: 330px;
- left: 30px;
- animation-duration: 4s;
- width: 6px;
- height: 6px;
-
-}
-
-
-.Burbujas div:nth-child(5){
-    top: 80px;
-    left: 45%;
-    animation-duration: 3.5s;
-}
-
-
-.Burbujas div:nth-child(6){
-
-    bottom: 300px;
-    left: 50%;
-    animation-duration: 2.5s;
-  
-}
-
-.Burbujas div:nth-child(7){
-    top: 260px;
-    right: 150px;
-    animation-duration: 3.5s;
-}
-
-
-.Burbujas div:nth-child(8){
-
-    top: 45%;
-    left: 50%;
-    animation-duration: 2.9s;
-}
-
-
-.Burbujas div:nth-child(9){
-    top: 190px;
-    right: 30px;
-    animation-duration: 4.3s;
-}
-
-
-.Burbujas div:nth-child(10){
-    bottom: 220px;
-    left: 60px;
-    width: 6px;
-    height: 6px;
-    animation-duration: 2.2s;
-}
-
-.Burbujas div:nth-child(11){
-    bottom: 330px;
-    right: 40px;
-    animation-duration: 4s;
-}
-
-.Burbujas div:nth-child(12){
-    bottom: 225px;
-    right: 60px;
-    width: 6px;
-    height: 6px;
-    animation-duration: 3s;
-}
-
-.Burbujas div:nth-child(13){
-    bottom: 130px;
-    right: 50px;
-    animation-duration: 2.5s;
-}
-
-.Burbujas div:nth-child(14){
-    bottom: 150px;
-    left:50%;
-    animation-duration: 2s;
-    
-    
-}
-
-
-.Burbujas div:nth-child(15){
-    top:340px;
-    right: 40px;
-    animation-duration: 4.3s;
-}
 
 .Main{
 
@@ -291,54 +162,6 @@
 }
 
 
-
-.Burbujas div:nth-child(3){
-    bottom: 130px;
-    left: 100px;
-    width: 6px;
-    height: 6px;
-    animation-duration: 2s;
-}
-
-
-
-
-.Burbujas div:nth-child(7){
-    top: 300px;
-    right: 200px;
-    animation-duration: 9s;
-}
-
-
-.Burbujas div:nth-child(8){
-
-    top: 60%;
-    right: 200px;
-    animation-duration: 2.9s;
-}
-
-
-.Burbujas div:nth-child(9){
-    top: 190px;
-    right: 50px;
-    animation-duration: 4s;
-}
-
-
-
-
-.Burbujas div:nth-child(11){
-    bottom: 250px;
-    right: 300px;
-    animation-duration: 4s;
-}
-
-
-.Burbujas div:nth-child(13){
-    bottom: 130px;
-    right: 0px;
-    animation-duration: 2.5s;
-}
 
 
 
