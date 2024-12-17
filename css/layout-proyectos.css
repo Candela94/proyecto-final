@@ -1,0 +1,181 @@
+
+
+
+
+
+
+.Main{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 1em;
+}
+.Main-h1{
+    font-family: "Mattone";
+    font-size: 32px;
+}
+
+
+.Main-proyectosDkImg{
+    display: none;
+}
+
+.Main-proyectos{
+    padding-left: 32px;
+    display: flex;
+    gap: 16px;
+    overflow-x: scroll;
+    overscroll-behavior-x:contain ;
+    scroll-snap-type: x proximity;
+}
+
+
+.Main-cardProyectos {
+    position: relative;
+   
+    
+}
+
+.Main-img{
+
+    width: 185px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 20px;
+
+    
+    
+}
+
+
+.Main-infoProyectos{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    position: absolute;
+    bottom: 20px;
+    color: #F6F6F0;
+    /* background-color: rgba(0, 0, 0, 0.1);
+ */
+}
+
+
+.Main-infoProyectos svg{
+    width: 20px;
+}
+
+.proyectos-button{
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    font-family: poppins;
+    border: none;
+    border-bottom: 0.3px solid white;
+    align-items: center;
+    color: #F6F6F0;
+    background: none;
+    padding-bottom: 0.3rem;
+
+    
+}
+
+.proyectos-button svg{
+    width: 18px;
+    color: #F6F6F0;
+    padding: 0.2rem;
+    border: solid 0.3px white;
+    border-radius: 50%;
+}
+
+.infoProyectos-logo{
+    max-width:content fit-;
+}
+
+.Main-infoProyectosP{
+    font-size: 12px;
+}
+
+
+.Main-modeButtonDiv{
+    display: flex;
+    justify-content: center;
+}
+.Main-modeButton{
+    border: none;
+    background-color: var(--secondary);
+    padding: 1rem;
+    border-radius: 50%;
+   
+}
+
+
+
+.Main-carrousel{
+    font-family: mattone-regular ;
+    display: flex;
+    gap: 4rem;
+    padding: 2em;
+    overflow-x: scroll;
+    overscroll-behavior-x:contain ;
+    scroll-snap-type: x proximity;
+}
+
+
+
+.Main-modeButton svg{
+    color: var(--primary);
+    
+    width: 2rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 650px) {
+
+    .Header-icon{
+        display: none;
+    }
+    
+    
+    
+    .Main-intro{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+    
+    .Main-h1{
+        
+        font-size: 80px;
+    }
+    
+    
+    .Main-introBtnEntrar{
+        display: none;
+    }
+
+    .Main-proyectos{
+        display: none;
+        height: 100vh;
+    }
+
+    .Main-proyectosDk{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .Main-proyectosDkImg{
+        width: 200px;
+    }
+}
+
