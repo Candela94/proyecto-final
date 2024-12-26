@@ -7,6 +7,8 @@
     gap: 3em;
     padding: 1em;
 }
+
+
 .Main-h1{
     font-family: "Mattone";
     font-size: 32px;
@@ -111,6 +113,7 @@
 .Main-carrousel{
     font-family: mattone-regular ;
     display: flex;
+    justify-content: space-between;
     gap: 4rem;
     padding: 2em;
     overflow-x: scroll;
@@ -145,12 +148,7 @@
     
     
     
-    .Main-intro{
-        display: flex;
-        justify-content: center;
-        width: 90%;
-    }
-    
+ 
     .Main-h1{
         
         font-size: 100px;
@@ -171,9 +169,10 @@
     .Main-proyectosDk{
 
         display: flex;
-        justify-content: space-between;
+      
         align-items: center;
         width: 100%;
+        height: 35%;
         padding: 1rem;
         
         background-color: var(--secondary);
@@ -183,6 +182,9 @@
 
     .Main-proyecto{
 
+      width: 100%;
+      
+      object-fit: cover;
        
     }
 
@@ -190,11 +192,8 @@
 
 
     .Main-img{
-
-        
-    position: relative;
-    height: 30%;
-    object-fit: contain;
+  width: 100%;
+  height: 15vh;
     border-radius: 4px;
     filter: brightness(50%);
     
