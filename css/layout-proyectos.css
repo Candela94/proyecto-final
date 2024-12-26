@@ -1,9 +1,6 @@
 
 
 
-
-
-
 .Main{
     display: flex;
     flex-direction: column;
@@ -16,7 +13,7 @@
 }
 
 
-.Main-proyectosDkImg{
+.Main-proyectosDk{
     display: none;
 }
 
@@ -156,7 +153,9 @@
     
     .Main-h1{
         
-        font-size: 80px;
+        font-size: 100px;
+        letter-spacing: 1rem;
+        color: var(--secondary);
     }
     
     
@@ -166,16 +165,44 @@
 
     .Main-proyectos{
         display: none;
-        height: 100vh;
+       
     }
 
     .Main-proyectosDk{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
-        height: 100vh;
+        padding: 1rem;
+        
+        background-color: var(--secondary);
+     
     }
 
-    .Main-proyectosDkImg{
-        width: 200px;
+
+    .Main-proyecto{
+
+       
     }
+
+
+
+
+    .Main-img{
+
+        
+    position: relative;
+    height: 30%;
+    object-fit: contain;
+    border-radius: 4px;
+    filter: brightness(50%);
+    
+    }
+
+
+    .Main-img:hover{}
+
+
 }
 
