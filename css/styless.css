@@ -7,7 +7,15 @@
 
 .Body{
     font-family: poppins;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
 }
+
+
+
+
+
 
 /* ------------------------- */
 /*    Variables              */
@@ -18,13 +26,17 @@
 
     --primary: #F6F6F0;
     --secondary: #2E2E2E;
-    --terciary: #2E2E2E;
+    --txt: #2E2E2E;
     
     --txt-button: #F6F6F0;
     font-size: 14px;
   
 
 }
+
+
+
+
 
 
 
@@ -35,9 +47,13 @@ a {
 
 
 
+
+
 /* ------------------------- */
 /*    Fuentes                */
 /* ------------------------- */
+
+
 
 
 @font-face {
@@ -84,7 +100,7 @@ a {
 /*         Header            */
 /* ------------------------- */
 
-
+/* Header version mobile  */
 
 .Header{
     display: flex;
@@ -92,13 +108,12 @@ a {
     justify-content: space-between;
     padding: 2em;
     /* background-color: var(--secondary); */
-    color: var(--terciary);
+    color: var(--txt);
     
 
 }
 
 
-/* Header versión dekstop */
 
 .Header-nav ul{
     font-family: poppins;
@@ -106,10 +121,14 @@ a {
     gap: 64px;
 }
 
+
+
 .Header-nav li{
     list-style: none;
    
 }
+
+
 
 .Header-icon{
     font-size: 2rem;
@@ -117,38 +136,81 @@ a {
 }
 
 
+.Header-dk{
+    display: none;
+}
+
+/* Header version dekstop */
 
 
-/* ------------------------- */
-/*    Clases reutilizables   */
-/* ------------------------- */
+@media screen and (min-width: 650px) {
 
 
-.u-bgPrimary {
-    background-color: var(--bg-primary);
+    .Header{
+        display: none;
+    }
+
+
+    .Header-dk{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+
+    .Header-dkNav{
+        background-color: var(--secondary);
+        color: var(--txt-button);
+        padding: 1rem 2rem;
+        border-radius: 20px;
+    }
+
+    .Header-dkUl{
+        display: flex;
+        gap: 6rem;
+        font-family: mattone-regular;
+        color: var(--text);
+    }
+
+    .Header-dkUl li{
+        list-style: none;
+    }
+
+
+    .HeaderDk-icons{
+        display: flex;
+        align-items: center;
+        gap: 28px;
+    }
+
+
+    .HeaderDk-ulIcons{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        background-color: var(--secondary);
+        color: var(--txt);
+        padding: 1rem 2rem;
+        border-radius: 20px;
+    }
+
+    .HeaderDk-ulIcons li{
+        list-style:none;
+    }
+
+    .HeaderDk-liIcons  i{
+        font-size: 18px;
+        color: var(--primary);
+    }
 
 }
 
-.u-bgSecondary {
-    background-color: var(--bg-secondary);
-
-}
 
 
-.u-title {
-    color: var(--title);
 
-}
 
-.u-txtPrimary {
-    color: var(--txt-primary);
 
-}
-
-.u-txtSecondary {
-    color: var(--txt-secondary);
-
-}
 
 
 
@@ -164,17 +226,16 @@ a {
 
 
 
-
-
-
 /*          Light mode      */
 /* ------------------------- */
 
 .u-lightMode{
 
-    --primary: #F6F6F0;
-    --secondary: #2E2E2E;
-    --terciary: #2E2E2E;
+    --primary: #EFE8D3;
+    --secondary: #1E1817;
+    --terciary:#DE6637;
+
+    --txt: #2E2E2E;  
     --txt-button: #F6F6F0;
    
 
@@ -191,7 +252,8 @@ a {
 
 --primary: #352D31;
 --secondary: #FEBAD0;
---terciary: #F1EBDD;
+--terciary:#ebb7c7;
+--txt: #F1EBDD;
 --txt-button: #F1EBDD;
 
 
@@ -206,8 +268,9 @@ a {
 .u-pinkMode{
     --primary: #FDA6DC;
     --secondary: #FF4821;
-    --terciary: #F7F7F0;
-    --txt-button: #F7F7F0;
+    --terciary:#F4B94B; 
+    --txt: #FBE2CA;
+    --txt-button: #FBE2CA;
 }
 
 
@@ -219,7 +282,8 @@ a {
 
     --primary: #97A75B;
     --secondary: #FDA6DC;
-    --terciary: #fbee37;
+    --terciary:#f4e72f;
+    --txt: #fbee37;
     --txt-button: #F7F7F0;
 }
 
@@ -227,50 +291,28 @@ a {
 
 
 
-
-
-/* ----------------------------------*/
-/*       Botones-color               */
-/* ----------------------------------*/
-
-
-
-
-/* ----------------------------------*/
-/*              Botones              */
-/* ----------------------------------*/
-
-
-#light-mode {
-    background-color: #F6F6F0;
+.Main-modeButtonDiv {
+    display: flex;
+    justify-content: center;
 }
 
-#purple-mode {
-    background-color: #352D31;
+.Main-modeButton {
+    border: none;
+    background-color: var(--secondary);
+    padding: 14px;
+    border-radius: 20px;
+
 }
 
-#pink-mode {
-    background-color: #FDA6DC;
-    
-}
+.Main-modeButton svg {
+    color: var(--primary);
+    width: 20px;
+   
 
-#green-mode {
-    background-color: #97A75B;
 }
 
 
 
 
-@media screen and (min-width: 650px)  {
-    
-    .Header-nav ul{
-        display: flex;
-    }
-
-    /* .Header-icon{
-        display: none;
-    } */
 
 
-
-}

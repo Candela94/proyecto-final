@@ -18,7 +18,7 @@
 /* utilitie para cambiar el color de algunas burbujas, lo añadiremos a los divs que quiera modificar para tener variedad de colores en el fondo */
 
 .u-colorTerciaryBurbujas {
-    background-color: var(--terciary);
+    background-color: var(--txt);
 }
 
 
@@ -56,7 +56,7 @@
 .Main-introBtnEntrar{
     font-family: mattone-regular;
     background-color: var(--secondary);
-    color: var(--terciary);
+    color: var(--txt);
     padding: 1rem;
     border-radius: 8px;
 }
@@ -89,7 +89,7 @@
 
 .Main-modeButton svg{
     width: 16px;
-    color: var(--terciary);
+    color: var(--txt);
 }
 
 

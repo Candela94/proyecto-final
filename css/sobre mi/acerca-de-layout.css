@@ -63,7 +63,7 @@ h1 {
 .Acordeon-pag2{
     border: 1px solid var(--secondary);
     background-color: var(--primary);
-    color: var(--terciary);
+    color: var(--txt);
     width: 25%;
     overflow: hidden;
 
