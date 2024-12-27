@@ -7,7 +7,7 @@
 .Main {
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 0.5em;
     /* padding: 1em; */
 }
 
@@ -18,7 +18,12 @@
 }
 
 
-.Main-proyectosDk {
+.Main-slider {
+    display: none;
+}
+
+
+.Main-todosProyectos{
     display: none;
 }
 
@@ -164,7 +169,10 @@
 
 
 
-    .Main-proyectosDk {
+
+
+
+    .Slider {
 
         display: flex;
 
@@ -180,18 +188,28 @@
     }
 
 
-    .Main-proyecto {
+
+    .Slider-proyecto {
 
         width: 100%;
         object-fit: cover;
         position: relative;
         overflow: hidden;
 
+    } 
+
+
+    .Slider-img {
+        width: 50%;
+        height: 30vh;
+        object-fit: cover;
+        border-radius: 4px;
+        filter: brightness(50%);
+        transition: filter 0.8s ease;
+        
     }
 
-
-
-    .Main-proyecto:hover .Main-logo {
+    .Slider-img:hover .Slider-logo {
 
         top: 50%;
         transform: translate(-50%, -50%);
@@ -205,7 +223,7 @@
 
 
 
-    .Main-proyecto:hover .Main-img{
+    .Slider-proyecto:hover .Slider-img{
         filter: brightness(80%);
     }
 
@@ -214,17 +232,36 @@
 
 
 
-    .Main-img {
-        width: 100%;
-        height: 15vh;
-        border-radius: 4px 0px 0px 4px;
-        filter: brightness(50%);
-        transition: filter 0.8s ease;
-        
+
+
+
+    .Slider-buttons{
+        display: flex;
+        justify-content: end;
+        padding: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: solid 1px black;
+        gap: 3em;
     }
 
 
-    .Main-logo {
+
+    .Slider-button{
+        background:none;
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: 20px;
+        border: solid 0.3px;
+    }
+
+    .Slider-button svg{
+        width: 24px;
+    }
+
+
+
+
+    .Slider-logo {
 
         position: absolute;
        
@@ -234,6 +271,51 @@
         width: 150px;
         transition: transform 0.6s ease, top 0.6s ease;
     }
+
+
+
+
+    .Main-todosProyectos{
+        display: flex;
+        justify-content: center;
+
+       padding-left: 7rem;
+       overflow: hidden;
+        gap: 4rem;
+        width: 100%;
+        
+
+    }
+
+    .Main-card {
+
+        width: 300px;
+
+        max-width: 100%;
+        
+    }
+    
+    .card-img{
+
+        width: 100%;
+        object-fit: cover;
+       height: 300px;
+       
+    }
+
+    .card-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 10vh;
+    }
+
+    .card-title{
+        font-family: mattone-regular;
+    }
+
+
 
    
 
