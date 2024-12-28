@@ -1,16 +1,22 @@
 
 
+//Datos de las cards
+const proyectos = [
 
-const lista_imagenes = [
 
-    
-    {file: "img/mattura/mattura-portada.png" , logo: ".img/mattura/logo-light-mattura.png", description : "imagen 1"}, 
-    {file: "img/rutea/rutea-portada.png" ,logo: ".img/rutea/rutea-logo.png",  description : "imagen 2"},
-    {file: "img/vioska/vioska-portada.png" , logo: ".img/vioska/una-vioska-logo.png", description : "imagen 3"},
-    {file: "img/cocos/cocos-portada.png" , logo: ".img/cocos/cocos-logo.png", description : "imagen 4"},
-    {file: "img/giftopia/d.png" , logo: ".img/giftopia/giftopia-logo.png", description : "imagen 5"},
+    { title: "Mattura", description: "Mattura", alt: "Mattura", file: "img/mattura/mattura-portada.png", logo: "img/mattura/logo-light-mattura.png", description: "imagen 1" },
 
-]
+    { title: "Rutea", description: "Rutea", alt: "Rutea", file: "img/rutea/rutea-portada.png", logo: "img/rutea/rutea-logo.png", description: "imagen 2" },
+
+    { title: "unavioska.", description: "unavioska.", alt: "unavioska.", file: "img/vioska/vioska-portada.png", logo: "img/vioska/una-vioska-logo.png", description: "imagen 3" },
+
+    { title: "musicplayer", description: "musicplayer", alt: "musicplayer", file: "img/vioska/vioska-portada.png", logo: "img/vioska/una-vioska-logo.png", description: "imagen 3" },
+
+    { title: "cocoZone", description: "cocoZone", alt: "cocoZone", file: "img/cocos/cocos-portada.png", logo: "img/cocos/cocos-logo.png", description: "imagen 4" },
+
+    { title: "Giftopia", description: "Giftopia", alt: "Giftopia", file: "img/giftopia/d.png", logo: "img/giftopia/giftopia-logo.png", description: "imagen 5" },
+
+];
 
 
 
@@ -19,20 +25,16 @@ const lista_imagenes = [
 // -----------------------------------------------
 
 
-const slider = document.querySelector('.Slider');
-const images = [];    //esto va a ser una lista de elementos html con imágenes
-
-
-
+const slider = document.querySelector('.Main-slider');
 
 const btnSig = document.querySelector("#btnSig");
 const btnAnt = document.querySelector("#btnAnt");
 
-const uno = document.querySelector("#uno");
-const dos = document.querySelector("#dos");
 
+const pag1 = proyectos.slice(0, 3); //la primera página va a tener los 3 primeros proyectos 
+const pag2 = proyectos.slice(3, 6); //segunda pagina con los ultimos 3 proyectos 
 
-let indice = 0; //indice de la imagen actual 
+let paginaActual = 1; //mostramos la primera pagina
 
 
 
@@ -44,76 +46,73 @@ let indice = 0; //indice de la imagen actual
 // -----------------------------------------------
 
 
-// Event listeners 
+function mostrarCards() {
 
-btnSig.addEventListener("click", siguienteImagen );
-btnAnt.addEventListener("click", anteriorImagen);
+    slider.innerHTML = ""; //limpiamos slider antes de agregar cards
 
+    let proyectosPagina;
 
-
-
-//Funciones 
-
+    if (paginaActual === 1) {
+        proyectosPagina = pag1;  //mostrar proyectos 1,2 y 3
 
 
-function mostrarImagenes(){
-    console.log("Se están cargando las imágenes");
+    } else if (paginaActual === 2) {  //mostramos proyectos 4, 5 y 6
+        proyectosPagina = pag2;
 
-    slider.innerHTML = ""; //limpieza del contenedor del slider 
-    const {file,description, logo} = lista_imagenes[indice];
-
-    const img = document.createElement("img");
-    img.classList.add("Slider-img");
-    img.src = file;
-    img.alt = description;
-    img.logo = logo;
-
-
-   const sliderLogo = document.createElement("img");
-   sliderLogo.classList.add("Slider-logo")
+    }
 
 
 
-    slider.appendChild(img);
 
+    proyectosPagina.forEach((proyecto) => {
 
-//esto es lo que tenia yo, chat gpt me ha corregido. 
+        const card = document.createElement('div');
 
- // lista_imagenes.map((imagen) => {
+        card.classList.add('Main-card');
+        card.innerHTML = `
+                        
+                        <img src = "${proyecto.file}" alt = "${proyecto.alt}" class= "card-img">
 
-    //     const img = document.createElement('img');  //creamos una etiqueta imagen
-    //     img.classList.add("Slider-img");
-    //     img.src = `${imagen.file}`;
-    //     img.alt = imagen.description;
+                         <div class="card-info">
+                        <h3 class="card-tittle">${proyecto.title}</h3>
+                        <p class="card-p">${proyecto.description}</p>
+                    </div>
 
-    //     slider.appendChild(img);
-       
+        `
 
+        //agregar card al slider 
+        slider.appendChild(card);
 
-    //     totalImages = images.length;
-
-    // });
-
-
-
-};
-
-
-function siguienteImagen() {
-    indice = (indice + 1) % lista_imagenes.length; //avanzamos en la lista 
-    mostrarImagenes();
+    });
 }
 
 
-function anteriorImagen() {
 
-if (indice === 0) {
-    indice = lista_imagenes.lenght -1; } else { indice -- ;}
-    mostrarImagenes();
-}
 
-    // indice = (indice - 1 + lista_imagenes.lenght) % lista_imagenes.length; //avanzamos en la lista 
-    // mostrarImagenes();
+
+
+
+
+btnSig.addEventListener('click', () => {
+  
+
+    if(paginaActual < 2) {
+        paginaActual++;
+        mostrarCards();
+    }
+
+});
+
+
+btnAnt.addEventListener('click', () => {
+
+    if(paginaActual > 1) {
+        paginaActual--;
+        mostrarCards();
+    }
+
+});
+
 
 
 
@@ -124,4 +123,4 @@ if (indice === 0) {
 //    3.Ejecutamos
 // -----------------------------------------------
 
-mostrarImagenes();
+mostrarCards();

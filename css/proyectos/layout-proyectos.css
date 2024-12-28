@@ -23,7 +23,7 @@
 }
 
 
-.Main-todosProyectos{
+.Main-proyectosDk{
     display: none;
 }
 
@@ -172,31 +172,11 @@
 
 
 
-    .Slider {
-
-        display: flex;
-
-        align-items: center;
-        width: 100%;
-        height: 35%;
-        padding: 2rem;
-        border-top: solid 9px var(--secondary);
-        border-bottom: solid 9px var(--secondary);
-
-        background-color: var(--terciary);
-
-    }
+  
 
 
 
-    .Slider-proyecto {
-
-        width: 100%;
-        object-fit: cover;
-        position: relative;
-        overflow: hidden;
-
-    } 
+   
 
 
     .Slider-img {
@@ -275,22 +255,29 @@
 
 
 
-    .Main-todosProyectos{
+    .Main-proyectosDk{
         display: flex;
-        justify-content: center;
-
-       padding-left: 7rem;
-       overflow: hidden;
-        gap: 4rem;
         width: 100%;
         
 
     }
 
+
+    .Main-slider {
+
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+        height: 35%;
+        padding: 2rem;
+        overflow: hidden;
+       
+    }
+
     .Main-card {
 
         width: 300px;
-
         max-width: 100%;
         
     }
