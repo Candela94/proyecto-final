@@ -1,0 +1,76 @@
+
+
+
+.Body{
+    font-family: poppins, khula;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary);
+   
+}
+
+
+
+
+
+
+.Main{
+
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+   
+}
+
+
+
+
+
+.Main-h1{
+    display: flex;
+    align-self: flex-end ;
+    font-family: mattone-black;
+    font-size: 48px;
+    color: var(--secondary);
+    
+   
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------ */
+/*     Media Query versión Tablet/Dekstop     */
+/* ------------------------------------------ */
+
+
+
+@media screen and (min-width: 650px) {
+
+.Header{}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -9,7 +9,7 @@
     font-family: poppins;
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 2em;
 }
 
 
@@ -28,8 +28,7 @@
     --secondary: #2E2E2E;
     --txt: #2E2E2E;
     
-    --txt-button: #F6F6F0;
-    font-size: 14px;
+ 
   
 
 }
@@ -100,11 +99,21 @@ a {
 /*         Header            */
 /* ------------------------- */
 
+
+
 /* Header version mobile  */
+
+
+.Header-dk{
+    display: none;
+}
+
 
 .Header{
     display: flex;
     width: 100%;
+    position: relative;
+    align-items: center;
     justify-content: space-between;
     padding: 2em;
     /* background-color: var(--secondary); */
@@ -113,31 +122,81 @@ a {
 
 }
 
+.Header-ul{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
 
-
-.Header-nav ul{
-    font-family: poppins;
-    display: none;
-    gap: 64px;
+.Header-ul li{
+    
+    list-style: none;
+  
+}
+.Header-li{
+    display: flex;
+    justify-content: space-between;
 }
 
 
 
-.Header-nav li{
-    list-style: none;
+
+#btnMenu{
+    font-size: 2.5rem;
+    color: var(--secondary);
+    border: none;
+    background: none;
+}
+
+
+.Header-menu{
+
+
+    position: absolute;
+    top: 100px;
+    right: -500px;
+    box-shadow:0 3px 3px var(--secondary );
+
+    
+
+    transition: right 0.8s ease;
+ 
+
+    padding: 2rem;
+    width: 300px;
+    border: solid 0.5px black;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.Header-menu.active {
+    right: 0px;
+}
+
+.Header-close{
+    width: 16px;
+    border: none;
+    background: none;
    
 }
 
 
 
-.Header-icon{
-    font-size: 2rem;
-    color: var(--secondary);
+
+
+
+
+.Header-menuUl li{
+
+    list-style: none;
+    padding-top: 16px;
+    padding-bottom:8px ;
+   
+    border-bottom: solid 0.5px var(--txt);
+    color: var(--txt);
 }
 
-
-.Header-dk{
-    display: none;
+.Header-menuUl li svg{
+    width: 14px;
 }
 
 /* Header version dekstop */

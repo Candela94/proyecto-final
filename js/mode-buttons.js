@@ -1,4 +1,26 @@
 
+// ----------------------------------------
+//         Botón menú mobile
+// ----------------------------------------
+
+
+// 1.Selección del botón 
+
+const btnMenu = document.querySelector("#btnMenu");
+const headerMenu = document.querySelector(".Header-menu");
+
+
+//2. Añadimos al botón el evento de escucha 
+
+btnMenu.addEventListener('click', () => {
+
+    headerMenu.classList.toggle('active');
+
+
+});
+
+
+
 
 
 

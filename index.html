@@ -19,7 +19,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/styless.css">
-    <link rel="stylesheet" href="./css/layout-index-inicio.css">
+    <link rel="stylesheet" href="./css/inicio/layout-index-inicio.css">
     <link rel="stylesheet" href="./css/variables.css">
 
 
@@ -31,101 +31,110 @@
 
 <body class="Body u-lightMode">
 
- 
 
+    <!-- Version mobile -->
 
     <Header class="Header">
         <a href="./index.html"><img src="#" alt="Logo" class="Logo"></a>
 
-        <a href="#"><span class="Header-icon material-symbols-outlined">
-            menu</a>
 
 
+        <nav class="Header-nav">
+            <ul class="Header-ul">
+               
+                <li> <button  class="Main-modeButton" id="modeButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                    </svg>
 
-            <nav class="Header-nav">
-                <ul class="Header-ul">
-                    <li class="Header-li"><a href="./sobre-mi.html">Sobre mi</a></li>
-                    <li class="Header-li"><a href="./proyectos.html">Proyectos</a></li>
-                    <li class="Header-li"><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
+                </button></li>
+                <li>  <a href="#"><button id="btnMenu"><span class=" material-symbols-outlined">
+                    menu</a></li>
+                </button>
+            </ul>
+        </nav>
     </Header>
+
+
+    <div class="Header-menu">
+       
+        <ul class="Header-menuUl">
+            <li><a href="./sobre-mi.html"><div class="Header-li">Acerca de
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+                </div></a>
+            </li>
+
+
+
+            <li><a href="./proyectos.html"><div class="Header-li">Proyectos
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+                  </div></a>
+            </li>
+
+
+
+            <li><a href="./contacto.html"><div class="Header-li">Contacto
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    
+                  </svg>
+                  </div></a>
+            </li>
+           
+        </ul>
+    </div>
+
+
+
+    <!-- Header VERSION DEKSTOP -->
+    <Header class="Header-dk">
+        <a href="./index.html"><img src="#" alt="Logo" class="Logo"></a>
+        <nav class="Header-dkNav">
+            <ul class="Header-dkUl">
+                <li class="Header-dkLi"><a href="./sobre-mi.html">Sobre mi</a></li>
+                <li class="Header-dkLi"><a href="./proyectos.html">Proyectos</a></li>
+                <li class="Header-dkLi"><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="HeaderDk-icons">
+            <ul class="HeaderDk-ulIcons">
+                <li class="HeaderDk-liIcons"><i class="fa-brands fa-behance"></i></li>
+                <li class="HeaderDk-liIcons"><i class="fa-brands fa-linkedin-in"></i></li>
+            </ul>
+            <div class="Main-modeButtonDiv">
+                <button class="Main-modeButton" id="modeButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                    </svg>
+
+                </button>
+            </div>
+
+        </div>
+    </Header>
+
+
+
+
 
 
     <main class="Main">
 
-        
-        <!-- Título principañ -->
-        <div class="Main-intro">
-            <h1 class="Main-h1">Mi mundo UX/UI Front End</h1>
-            <p class="Main-p">Candela Fos</p>
-          
-            
-          
-            
-        </div>
+        <h1 class="Main-h1">Mi mundo Ux/Ui + Front End developer</h1>
 
-
-        <!-- Botón entrar -->
-        <button class="Main-introBtnEntrar">¡Entra!</button>
-
-
-
-
-        <!-- Botón cambiar modo -->
-
-        <div class="Main-mode">
-
-
-            <button class="Main-modeButton u-darkMode" id="modeButton">
-               
-                <svg class="Main-modeIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
-                </svg>
-
-            </button>
-
-        </div>        
 
     </main>
 
 
-    <footer class="Footer">
-        <nav class="Footer-nav">
-            <ul class="Footer-ul">
-                <li class="Footer-li"><span class="Footer- icons material-symbols-outlined"> 
-                        stylus_note
-                    </span></li>
-                <li class="Footer-li"><span class=" Footer- icons material-symbols-outlined">
-                        stylus_note
-                    </span></li>
-                <li class="Footer-li"><span class=" Footer- icons material-symbols-outlined">
-                        stylus_note
-                    </span></li>
-            </ul>
-        </nav>
-    
-    
-    </footer>
-
-
-
-
-    <!-- Footer dekstop -->
-    
-    <Footer class="FooterDekstop">
-        <nav class="FooterDekstop-nav">
-            <div class="FooterDekstop-navDiv">Sobre mi</div>
-            <div class="FooterDekstop-navDiv">Proyectos</div>
-            <div class="FooterDekstop-navDiv">Contactos</div>
-        </nav>
-    </Footer>
-
-
-
-   
 
 
 
@@ -135,6 +144,21 @@
 
 
 
+
+
+
+
+
+    <!-- Versión dekstop -->
+
+
+
+
+
+
+
+
+   <script src="./js/mode-buttons.js"></script>
 
 </body>
 

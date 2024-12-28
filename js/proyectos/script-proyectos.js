@@ -10,7 +10,7 @@ const proyectos = [
 
     { title: "unavioska.", description: "unavioska.", alt: "unavioska.", file: "img/vioska/vioska-portada.png", logo: "img/vioska/una-vioska-logo.png", description: "imagen 3" },
 
-    { title: "musicplayer", description: "musicplayer", alt: "musicplayer", file: "img/vioska/vioska-portada.png", logo: "img/vioska/una-vioska-logo.png", description: "imagen 3" },
+    { title: "musicplayer", description: "musicplayer", alt: "musicplayer", file: "img/vioska/vioska-portada.png", logo: "img/vioska/una-vioska-logo..png", description: "imagen 3" },
 
     { title: "cocoZone", description: "cocoZone", alt: "cocoZone", file: "img/cocos/cocos-portada.png", logo: "img/cocos/cocos-logo.png", description: "imagen 4" },
 
@@ -70,11 +70,23 @@ function mostrarCards() {
 
         card.classList.add('Main-card');
         card.innerHTML = `
+
+                        <div class = "Card-btnLogo">
+                            <img class = "Card-Logo" src = "${proyecto.logo}" alt = "${proyecto.alt}">
+
+                            <button class = "Card-button"> Ver proyecto
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+
+                             </button>
+                        </div>
                         
                         <img src = "${proyecto.file}" alt = "${proyecto.alt}" class= "card-img">
 
                          <div class="card-info">
-                        <h3 class="card-tittle">${proyecto.title}</h3>
+                        <h3 class="card-title">${proyecto.title}</h3>
                         <p class="card-p">${proyecto.description}</p>
                     </div>
 
@@ -94,9 +106,9 @@ function mostrarCards() {
 
 
 btnSig.addEventListener('click', () => {
-  
 
-    if(paginaActual < 2) {
+
+    if (paginaActual < 2) {
         paginaActual++;
         mostrarCards();
     }
@@ -106,7 +118,7 @@ btnSig.addEventListener('click', () => {
 
 btnAnt.addEventListener('click', () => {
 
-    if(paginaActual > 1) {
+    if (paginaActual > 1) {
         paginaActual--;
         mostrarCards();
     }

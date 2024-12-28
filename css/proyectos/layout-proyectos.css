@@ -170,101 +170,25 @@
 
 
 
-
-
-  
-
-
-
    
 
-
-    .Slider-img {
-        width: 50%;
-        height: 30vh;
-        object-fit: cover;
-        border-radius: 4px;
-        filter: brightness(50%);
-        transition: filter 0.8s ease;
-        
-    }
-
-    .Slider-img:hover .Slider-logo {
-
-        top: 50%;
-        transform: translate(-50%, -50%);
-       
-        
-
-    }
-
-
-
-
-
-
-    .Slider-proyecto:hover .Slider-img{
-        filter: brightness(80%);
-    }
-
-
-
-
-
-
-
-
-
-    .Slider-buttons{
-        display: flex;
-        justify-content: end;
-        padding: 1rem;
-        padding-bottom: 1rem;
-        border-bottom: solid 1px black;
-        gap: 3em;
-    }
-
-
-
-    .Slider-button{
-        background:none;
-        cursor: pointer;
-        padding: 0.5rem;
-        border-radius: 20px;
-        border: solid 0.3px;
-    }
-
-    .Slider-button svg{
-        width: 24px;
-    }
-
-
-
-
-    .Slider-logo {
-
-        position: absolute;
-       
-        top: -30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 150px;
-        transition: transform 0.6s ease, top 0.6s ease;
-    }
-
-
-
-
+    
     .Main-proyectosDk{
         display: flex;
         width: 100%;
         
-
+        
     }
+    
+
+/* --------------------------------- */
+/*              Slider               */
+/* --------------------------------- */
 
 
+    
     .Main-slider {
-
+        
         display: flex;
         justify-content: center;
         gap: 1rem;
@@ -272,24 +196,105 @@
         height: 35%;
         padding: 2rem;
         overflow: hidden;
-       
-    }
-
-    .Main-card {
-
-        width: 300px;
-        max-width: 100%;
         
     }
-    
-    .card-img{
 
-        width: 100%;
-        object-fit: cover;
-       height: 300px;
-       
+
+
+    
+    .Main-card {
+        
+        width: 300px;
+        max-width: 100%;
+        position: relative;
+        transition: all 1s ease;
+        overflow: hidden;
+        
     }
 
+
+     
+    .Card-btnLogo {
+        
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        top: -30%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        transition: transform 1s ease, top 0.6s ease;
+        z-index: 2;
+    }
+
+
+
+
+
+
+    .Card-logo{
+        width: 200px;
+    }
+
+
+
+
+
+    .Card-button{
+        font-family: poppins;
+        background: none;
+        color: white;
+        border: none;
+        border-bottom: solid 0.4px white;
+        cursor: pointer;
+    }
+
+
+
+
+    
+
+    .Card-button svg {
+
+        width: 14px;
+    }
+
+
+
+
+
+
+    .Main-card:hover .Card-btnLogo {
+
+        top: 50%;
+        transform: translate(-50%, -50%);
+    
+    }
+
+
+
+    
+    .card-img{
+        
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+        border-radius: 4px;
+        filter: brightness(50%);
+        transition: filter 0.8s ease;
+        
+    }
+
+
+
+    .Main-card:hover .card-img{
+        filter: brightness(80%);
+    }
+
+    
+    
     .card-info{
         display: flex;
         flex-direction: column;
@@ -298,13 +303,43 @@
         height: 10vh;
     }
 
+    
+
     .card-title{
-        font-family: mattone-regular;
+        
+    }
+    
+    
+    
+    
+/* --------------------------------- */
+/*          Botones slider           */
+/* --------------------------------- */
+    
+    .Slider-buttons{
+        display: flex;
+        justify-content: end;
+        padding: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: solid 1px black;
+        gap: 3em;
+    }
+    
+    
+    
+    .Slider-button{
+        background:none;
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: 20px;
+        border: solid 0.3px;
+    }
+    
+    .Slider-button svg{
+        width: 24px;
     }
 
 
-
-   
 
 
 }
