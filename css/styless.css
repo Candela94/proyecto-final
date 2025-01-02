@@ -116,7 +116,8 @@ a {
 .Header{
     display: flex;
     width: 100%;
-    position: relative;
+    position: sticky;
+    bottom: 0;
     align-items: center;
     justify-content: space-between;
     padding: 2em;
@@ -190,6 +191,41 @@ a {
 
 
 
+.Footer{
+
+    padding: 2em 4em;
+    background-color: var(--secondary);
+    border-radius: 20px 20px 0px 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+
+
+}
+
+.Footer-nav{
+   
+}
+
+
+
+.Footer-ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer-ul li{
+    list-style: none;
+}
+
+.Footer-ul li svg{
+    width: 32px;
+    color: var(--primary);
+}
+
+
+
 
 
 
@@ -214,6 +250,8 @@ a {
 @media screen and (min-width: 650px) {
 
 
+
+
     .Header{
         display: none;
     }
@@ -228,8 +266,8 @@ a {
 
 
     .Header-dkNav{
-        background-color: var(--secondary);
-        color: var(--txt-button);
+        background-color: var(--terciary);
+        color: var(--primary);
         padding: 1rem 2rem;
         border-radius: 20px;
     }
@@ -238,7 +276,7 @@ a {
         display: flex;
         gap: 6rem;
         font-family: mattone-regular;
-        color: var(--text);
+        color: var(--terciary);
     }
 
     .Header-dkUl li{
@@ -257,8 +295,8 @@ a {
         display: flex;
         align-items: center;
         gap: 32px;
-        background-color: var(--secondary);
-        color: var(--txt);
+        background-color: var(--terciary);
+        color: var(--primary);
         padding: 1rem 2rem;
         border-radius: 20px;
     }
@@ -272,6 +310,12 @@ a {
         color: var(--primary);
     }
 
+
+
+
+    .Footer{
+        display: none;
+    }
 }
 
 
@@ -299,9 +343,9 @@ a {
 
 .u-lightMode{
 
-    --primary: #EFE8D3;
-    --secondary: #1E1817;
-    --terciary:#DE6637;
+    --primary: #fcf9f1;
+    --secondary: #BF9FEC;
+    --terciary:#2E2E2E;
 
     --txt: #2E2E2E;  
     --txt-button: #F6F6F0;
